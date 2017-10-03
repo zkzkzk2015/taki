@@ -1,0 +1,120 @@
+.page-home
+
+  .home-hero
+    padding: 20px 20px 40px
+
+    .mission
+      font:
+        size: 21px
+        weight: 400
+      margin-bottom: 20px
+      max-width: 300px
+
+    .section-title-rule
+      border-top-color: rgba(0,0,0,0.15)
+      margin: 0px 0px 30px
+      display: none
+
+      &.bottom
+        display: block
+        margin: 10px 0px 30px
+
+  .top-rect
+    padding-top: 500px
+
+
+  @media (min-width: 830px)
+
+    .home-hero
+
+      .mission
+        font-size: 28px
+        line-height: 1.38
+
+      .section-title-rule
+        display: block
+
+      .flex-container
+        display: flex
+        max-width: 830px
+        margin: 0 auto
+
+      .flex-about-content
+        max-width: 300px
+        margin-right: 30px
+        flex-shrink: 0
+
+        .section-head
+          text-align: left
+
+        .section-title-rule
+          display: block
+
+          &.bottom
+            display: none
+
+      .flex-video-right
+        width: 100%
+
+
+  .jquery-video-course
+    background-color: #0067AF
+
+    .section-title-rule
+      border-top-color: rgba(255,255,255,0.3)
+
+    input[type="text"],
+    input[type="email"]
+      background-color: hsla(0,0%,100%,0.15)
+      border-color: white
+      color: white
+      text-transform: uppercase
+
+      &::placeholder
+        color: hsla(0,0%,100%,0.5)
+
+    input[type="submit"],
+    button
+      background: white
+      color: #0067AF
+      border-color: white
+
+  .quote
+    text-align: center
+    background: #f5f5f5
+
+    > div
+      display: inline-block
+      font-size: 24px
+      font-weight: 300
+      max-width: 600px
+      padding: 0 20px
+
+      span
+        font-weight: 400
+
+      cite
+        display: block
+        text-align: right
+        font-size: 14px
+
+  .popular-episodes
+
+    .section-head span
+      font-style: italic
+      font-weight: 400
+      display: inline-block
+      position: relative
+      z-index: 1
+
+      &:after
+        content: ''
+        display: block
+        background: fade-out(#F9EC31, 0.7)
+        height: 30px
+        width: 50px
+        z-index: -1
+        position: absolute
+        top: 0px
+        left: -5px
+        transform: rotate(24deg) skewY(-24deg)
